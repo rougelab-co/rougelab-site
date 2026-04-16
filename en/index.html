@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rouge Lab — Art School</title>
+  <meta name="description" content="Rouge Lab is an art school in Lima offering painting, drawing, and creative expression workshops for adults, children, and teams." />
+  <link rel="alternate" hreflang="es" href="/" />
+  <link rel="alternate" hreflang="en" href="/en/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <a href="#inicio" class="nav__logo">
+      <span class="nav__logo-bird">&#x2022;</span> Rouge Lab
+    </a>
+    <button class="nav__toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#nosotros">About</a></li>
+      <li><a href="#talleres">Workshops</a></li>
+      <li><a href="#empresas">Companies</a></li>
+      <li><a href="#galeria">Gallery</a></li>
+      <li><a href="#contacto" class="nav__cta">Enroll</a></li>
+      <li class="nav__lang" aria-label="Language selector">
+        <a href="../">ES</a>
+        <a href="./" class="is-active" aria-current="page">EN</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section class="hero" id="inicio">
+    <div class="hero__bg">
+      <div class="hero__shape hero__shape--1"></div>
+      <div class="hero__shape hero__shape--2"></div>
+      <div class="hero__shape hero__shape--3"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Art School · Lima</p>
+      <h1 class="hero__title">
+        Art lives<br />
+        <em>in those who dare</em>
+      </h1>
+      <p class="hero__subtitle">
+        Painting, drawing, and illustration workshops for adults,<br class="desktop-only" />
+        children, and work teams. No previous experience needed.
+      </p>
+      <div class="hero__actions">
+        <a href="#talleres" class="btn btn--primary">View workshops</a>
+        <a href="#nosotros" class="btn btn--ghost">Discover Rouge Lab</a>
+      </div>
+    </div>
+    <div class="hero__visual">
+      <div class="hero__card hero__card--1">
+        <div class="hero__card-img" style="background-color: #c9463d;"></div>
+        <span>Oil Painting</span>
+      </div>
+      <div class="hero__card hero__card--2">
+        <div class="hero__card-img" style="background-color: #e8c9a0;"></div>
+        <span>Watercolor</span>
+      </div>
+      <div class="hero__card hero__card--3">
+        <div class="hero__card-img" style="background-color: #2c2118;"></div>
+        <span>Illustration</span>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Explore</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <section class="about about--home" id="nosotros">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__visual">
+          <div class="about__img-wrapper">
+            <img src="../img/talleres/2049753c-a8f8-4cf8-a134-66e9a15b67ac.JPG" alt="Participant creating at the Rouge Lab studio" class="about__img about__img--main" loading="lazy" />
+            <img src="../img/talleres/4819801e-a44d-4fa1-bdee-fe150445d167.JPG" alt="Felting piece created at Rouge Lab" class="about__img about__img--accent" loading="lazy" />
+          </div>
+          <div class="about__stat-card">
+            <span class="about__stat-number">+800</span>
+            <span class="about__stat-label">students welcomed</span>
+          </div>
+        </div>
+        <div class="about__text">
+          <p class="section-eyebrow">Who we are</p>
+          <h2 class="section-title">A place where<br /><em>color speaks</em></h2>
+          <p class="about__body">
+            Rouge Lab was born from the belief that creating with your hands can transform you. We are a studio-school in the heart of Lima where artists, curious minds, and teams discover their own visual language.
+          </p>
+          <p class="about__body">
+            Our workshops combine technique, experimentation, and plenty of color. Art is not a talent you are simply born with, it is a practice that can be cultivated.
+          </p>
+          <ul class="about__pillars">
+            <li>
+              <div class="about__pillar-icon">&#9679;</div>
+              <div>
+                <strong>Process over outcome</strong>
+                <p>We value the creative journey as much as the finished piece.</p>
+              </div>
+            </li>
+            <li>
+              <div class="about__pillar-icon">&#9679;</div>
+              <div>
+                <strong>Small groups</strong>
+                <p>No more than 10 people per workshop for close guidance.</p>
+              </div>
+            </li>
+            <li>
+              <div class="about__pillar-icon">&#9679;</div>
+              <div>
+                <strong>Materials included</strong>
+                <p>Everything you need is already waiting for you in the studio.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="about__evidence about__evidence--band about__evidence--home">
+        <div class="about__evidence-head">
+          <div>
+            <p class="about__evidence-kicker">Why art helps</p>
+            <h3 class="about__evidence-title">Artistic practice also supports well-being, confidence, and connection.</h3>
+          </div>
+          <p class="about__evidence-intro">
+            It is not just intuition. Evidence gathered by the WHO across thousands of studies links artistic practice with well-being, emotional regulation, social connection, and lifelong learning.
+          </p>
+        </div>
+        <div class="about__evidence-grid">
+          <article class="about__evidence-card">
+            <h3>Regulates and focuses</h3>
+            <p>Creating with your hands helps quiet mental noise, sustain attention, and find a real pause in the middle of everyday life.</p>
+          </article>
+          <article class="about__evidence-card">
+            <h3>Builds confidence</h3>
+            <p>Exploring materials, making mistakes, and trying again develops creative autonomy and a kinder relationship with error.</p>
+          </article>
+          <article class="about__evidence-card">
+            <h3>Connects people</h3>
+            <p>Shared art-making encourages empathy, conversation, and belonging in children, adults, and teams alike.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="team">
+        <p class="section-eyebrow" style="text-align:center; margin-top:5rem;">The team</p>
+        <h2 class="section-title" style="text-align:center; margin-bottom:3rem;">The people behind<br/><em>Rouge Lab</em></h2>
+        <div class="team__grid">
+
+          <div class="team__card">
+            <div class="team__photo-wrap">
+              <img src="../img/mariate.jpg" alt="Mariaté" class="team__photo team__photo--real" />
+              <img src="../img/tete_felt.png" alt="Mariaté felting" class="team__photo team__photo--felt" />
+            </div>
+            <div class="team__info">
+              <h3 class="team__name">Mariaté</h3>
+              <p class="team__role">Director &amp; Co-founder</p>
+              <p class="team__bio">Art director and illustrator with broad experience in creative, editorial, and corporate projects. She has collaborated with brands and teams looking to communicate through image. At Rouge Lab, she brings that experience into the classroom, creating a space where art is learned with technique and soul.</p>
+              <a href="https://www.instagram.com/petirouge.studio/" target="_blank" rel="noopener" class="team__ig">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                @petirouge.studio
+              </a>
+            </div>
+          </div>
+
+          <div class="team__card">
+            <div class="team__photo-wrap">
+              <img src="../img/carlos.jpg" alt="Carlos" class="team__photo team__photo--real" />
+              <img src="../img/carlos_felt.png" alt="Carlos felting" class="team__photo team__photo--felt" />
+            </div>
+            <div class="team__info">
+              <h3 class="team__name">Carlos</h3>
+              <p class="team__role">Operations Director &amp; Co-founder</p>
+              <p class="team__bio">Technology professional and university professor, with experience leading teams at major national companies. He has managed high-impact projects in digital transformation, operations, and platforms. At Rouge Lab, he builds the infrastructure that makes the experience possible, from enrollment systems to growth strategy.</p>
+            </div>
+          </div>
+
+          <div class="team__card team__card--mascot">
+            <div class="team__photo-wrap team__photo-wrap--mascot">
+              <img src="../img/peti_row.jpg" alt="Peti — Chief Feather Officer" class="team__photo team__photo--mascot" />
+            </div>
+            <div class="team__info">
+              <h3 class="team__name">Peti</h3>
+              <p class="team__role">Chief Feather Officer</p>
+              <p class="team__bio">No speeches, no salary, just inspiration. Peti is the soul of Rouge Lab: handmade, full of color, and carrying the kind of energy that reminds us why art matters. First graduate of the felting workshop.</p>
+              <span class="team__badge">&#x1F426; Official mascot</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="workshops" id="talleres">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Workshops</p>
+        <h2 class="section-title">Who is<br /><em>Rouge Lab for?</em></h2>
+        <p class="section-subtitle">For everyone. From age 5 to... many years beyond.</p>
+      </div>
+
+      <div class="workshops__tabs">
+        <button class="workshops__tab active" data-tab="adults">Adults</button>
+        <button class="workshops__tab" data-tab="kids">Kids</button>
+        <button class="workshops__tab" data-tab="companies">Companies</button>
+      </div>
+
+      <div class="workshops__panel active" id="tab-adults">
+        <div class="workshops__adults-intro">
+          <h3>A place to create again</h3>
+          <p>
+            Our adult workshops combine technique, exploration, and close guidance so you can develop your visual language at your own pace, whether you are starting from scratch or returning to an existing practice.
+          </p>
+        </div>
+        <div class="workshops__grid">
+          <div class="workshop-card">
+            <div class="workshop-card__color" style="background: #c9463d;"></div>
+            <div class="workshop-card__body">
+              <h3>My First Felt Figure</h3>
+              <p>Discover fiber, volume, and color while creating handmade textile pieces through a deeply creative and relaxing process.</p>
+              <ul class="workshop-card__meta">
+                <li>&#128197; Friday 18:30 – 20:30</li>
+                <li>&#128205; Rouge Lab Studio</li>
+                <li>&#127775; All levels</li>
+              </ul>
+              <a href="#contacto" class="btn btn--small btn--primary">Join</a>
+            </div>
+          </div>
+          <div class="workshop-card">
+            <div class="workshop-card__color" style="background: #e8c9a0;"></div>
+            <div class="workshop-card__body">
+              <h3>My First Watercolor Painting</h3>
+              <p>Master water and pigment through landscapes, botanicals, and abstraction on high-quality paper.</p>
+              <ul class="workshop-card__meta">
+                <li>&#128197; Wednesday 18:00 – 20:30</li>
+                <li>&#128205; Rouge Lab Studio</li>
+                <li>&#127775; All levels</li>
+              </ul>
+              <a href="#contacto" class="btn btn--small btn--primary">Join</a>
+            </div>
+          </div>
+          <div class="workshop-card">
+            <div class="workshop-card__color" style="background: #7a5c4a;"></div>
+            <div class="workshop-card__body">
+              <h3>Learn to Draw from Scratch</h3>
+              <p>Line, composition, and visual storytelling. Build your own illustrative voice from the ground up.</p>
+              <ul class="workshop-card__meta">
+                <li>&#128197; Thursday 18:00 – 20:00</li>
+                <li>&#128205; Rouge Lab Studio</li>
+                <li>&#127775; Beginners</li>
+              </ul>
+              <a href="#contacto" class="btn btn--small btn--primary">Join</a>
+            </div>
+          </div>
+          <div class="workshop-card">
+            <div class="workshop-card__color" style="background: #2c2118;"></div>
+            <div class="workshop-card__body">
+              <h3>Paint Your First Project</h3>
+              <p>An open creation space with guidance. Work on your own project with feedback from our artists.</p>
+              <ul class="workshop-card__meta">
+                <li>&#128197; Sunday 10:00 – 13:00</li>
+                <li>&#128205; Rouge Lab Studio</li>
+                <li>&#127775; Beginners</li>
+              </ul>
+              <a href="#contacto" class="btn btn--small btn--primary">Join</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="workshops__panel" id="tab-kids">
+        <div class="workshops__kids-hero">
+          <div class="workshops__kids-text">
+            <h3>My little big studio</h3>
+            <p>
+              Rouge Lab children's workshops are spaces for free exploration where kids experiment with textures, colors, and different materials. We nurture creativity, focus, and self-expression in a safe and stimulating environment.
+            </p>
+            <ul class="workshops__kids-list">
+              <li><strong>Ages:</strong> 5 to 12</li>
+              <li><strong>Groups:</strong> max. 8 children</li>
+              <li><strong>Schedule:</strong> Saturdays 9:00 – 11:00 and 14:00 – 16:00</li>
+              <li><strong>Format:</strong> monthly with limited spots</li>
+            </ul>
+            <a href="#contacto" class="btn btn--primary">Reserve a spot</a>
+          </div>
+          <div class="workshops__kids-visual">
+            <img src="../img/talleres/4cf936ca-8962-4713-806b-2a89aa88172f.JPG" alt="Child showing a painting made at Rouge Lab" class="workshops__kids-image" loading="lazy" />
+            <div class="workshops__kids-tags">
+              <span>Tempura</span>
+              <span>Collage</span>
+              <span>Clay</span>
+              <span>Watercolor</span>
+              <span>Printmaking</span>
+              <span>Drawing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="workshops__panel" id="tab-companies">
+        <div class="workshops__companies">
+          <div class="workshops__companies-text">
+            <h3>Creativity for teams</h3>
+            <p>
+              We design artistic experiences for companies that want to strengthen relationships, stimulate creative thinking, and offer their teams a genuinely restorative pause.
+            </p>
+            <p>
+              Every session is customized and can take place either in our studio or at your company.
+            </p>
+          </div>
+          <div class="workshops__companies-cards">
+            <div class="companies-card">
+              <div class="companies-card__icon">&#127775;</div>
+              <h4>Creative Team Building</h4>
+              <p>Collaborative painting sessions for groups of 10 to 50 people.</p>
+            </div>
+            <div class="companies-card">
+              <div class="companies-card__icon">&#127775;</div>
+              <h4>Well-being Workshop</h4>
+              <p>Art-based experiences to reduce stress and support workplace well-being.</p>
+            </div>
+            <div class="companies-card">
+              <div class="companies-card__icon">&#127775;</div>
+              <h4>Brand Event</h4>
+              <p>Custom artistic experiences shaped around your company's identity or campaign.</p>
+            </div>
+            <div class="companies-card">
+              <div class="companies-card__icon">&#127775;</div>
+              <h4>Corporate Gifts</h4>
+              <p>A framed collective artwork to keep as a memory or institutional gift.</p>
+            </div>
+          </div>
+          <a href="#contacto" class="btn btn--primary">Request a quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery" id="galeria">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Gallery</p>
+        <h2 class="section-title">What comes to life<br /><em>in the studio</em></h2>
+      </div>
+    </div>
+    <div class="gallery__grid">
+      <div class="gallery__item gallery__item--tall">
+        <img src="../img/talleres/1487d30d-8823-4ec9-9c9c-355a350ff001.JPG" alt="Children painting a colorful piece at Rouge Lab" class="gallery__image" loading="lazy" />
+      </div>
+      <div class="gallery__item">
+        <img src="../img/talleres/1d75b389-9949-458d-b169-37931965fa81.JPG" alt="Felting process at Rouge Lab" class="gallery__image" loading="lazy" />
+      </div>
+      <div class="gallery__item">
+        <img src="../img/talleres/710131fc-3ccc-4c96-8515-e1dfbfdd8624.JPG" alt="Textile works inspired by the sky created at Rouge Lab" class="gallery__image" loading="lazy" />
+      </div>
+      <div class="gallery__item gallery__item--wide">
+        <img src="../img/talleres/da904399-f6e9-4173-9c25-c521548ea36d.JPG" alt="Floral illustrations created at Rouge Lab" class="gallery__image" loading="lazy" />
+      </div>
+      <div class="gallery__item">
+        <img src="../img/talleres/e0db3ded-92bb-47d5-9224-748b6064883d.JPG" alt="Shared workshop session at Rouge Lab" class="gallery__image" loading="lazy" />
+      </div>
+      <div class="gallery__item gallery__item--tall">
+        <img src="../img/talleres/f56699e2-7bed-45f2-bb6c-44057b0421e8.JPG" alt="Textile portrait created at Rouge Lab" class="gallery__image" loading="lazy" />
+      </div>
+    </div>
+    <div class="gallery__footer">
+      <a href="https://www.instagram.com/petirojo.bc/" target="_blank" rel="noopener" class="gallery__instagram">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        See more on Instagram @petirojo.bc
+      </a>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="container">
+      <div class="testimonials__grid">
+        <blockquote class="testimonial">
+          <p>"Rouge Lab gave me back something I thought I did not have: the ability to create. The atmosphere is magical and the teachers are incredible."</p>
+          <footer>— Valentina R., watercolor workshop</footer>
+        </blockquote>
+        <blockquote class="testimonial">
+          <p>"We brought our team of 30 people and it was the best integration activity we have ever done. Everyone left carrying their own artwork."</p>
+          <footer>— Andrés M., HR manager</footer>
+        </blockquote>
+        <blockquote class="testimonial">
+          <p>"My 7-year-old cries every time the workshop ends because he does not want to leave. That says it all."</p>
+          <footer>— Laura P., student parent</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="giftcard" id="regala">
+    <div class="container">
+      <div class="giftcard__grid">
+        <div class="giftcard__content">
+          <p class="section-eyebrow">Gift Card</p>
+          <h2 class="section-title">Gift a workshop,<br /><em>gift a space of your own</em></h2>
+          <p class="giftcard__body">
+            Some gifts last a moment and others open an experience. At Rouge Lab, you can gift a workshop spot as a gift card so someone you care about can pause, explore their creativity, and take home something made with their own hands.
+          </p>
+          <p class="giftcard__body">
+            It works like any other studio offering: choose the workshop or amount you want to gift and we turn it into a special invitation for children, adults, or even a shared experience.
+          </p>
+          <div class="giftcard__reasons">
+            <article class="giftcard__reason">
+              <h3>A meaningful gift</h3>
+              <p>You are not only giving an object, you are giving time, attention, and an experience worth remembering.</p>
+            </article>
+            <article class="giftcard__reason">
+              <h3>Flexible and personal</h3>
+              <p>It can be for a specific workshop, a free amount, or a special date such as a birthday, Mother's Day, or a team celebration.</p>
+            </article>
+            <article class="giftcard__reason">
+              <h3>For all ages</h3>
+              <p>It is a beautiful way to invite someone to create, whether it is a curious child, an adult reconnecting with art, or someone in need of a different kind of pause.</p>
+            </article>
+          </div>
+          <div class="giftcard__actions">
+            <a href="#contacto" class="btn btn--primary">I want to gift a workshop</a>
+            <span class="giftcard__note">Available in digital format or coordinated through WhatsApp.</span>
+          </div>
+        </div>
+        <div class="giftcard__visual">
+          <img src="../img/talleres/4be3f8bb-c95b-4450-a2a8-bf1559002125.JPG" alt="Hand-painted gift cards at Rouge Lab" class="giftcard__image giftcard__image--main" loading="lazy" />
+          <img src="../img/talleres/8ba4084d-997b-44ff-909c-968a8f6ca23a.JPG" alt="Handmade textile heart detail" class="giftcard__image giftcard__image--accent" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contacto">
+    <div class="container">
+      <div class="contact__grid">
+        <div class="contact__info">
+          <p class="section-eyebrow">Contact</p>
+          <h2 class="section-title">Let's talk about<br /><em>your next class</em></h2>
+          <p class="contact__body">Write to us and we will tell you everything about spots, schedules, and pricing. You can also follow us on Instagram to see the daily life of the studio.</p>
+          <ul class="contact__links">
+            <li>
+              <a href="https://wa.me/51987142146" target="_blank" rel="noopener">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                WhatsApp
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/petirojo.bc/" target="_blank" rel="noopener">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                @petirojo.bc
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/petirouge.studio/" target="_blank" rel="noopener">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                @petirouge.studio
+              </a>
+            </li>
+            <li>
+              <a href="mailto:hola@rougelab.co">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                hola@rougelab.co
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form class="contact__form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="interest">I am interested in</label>
+            <select id="interest" name="interest">
+              <option value="">Choose an option</option>
+              <option value="adults">Adult workshops</option>
+              <option value="kids">Kids workshops</option>
+              <option value="companies">Experiences for companies</option>
+              <option value="giftcard">Gift card / Gift a workshop</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us a bit about yourself or your team..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send message</button>
+          <p class="form-success" id="formSuccess" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <p class="footer__logo">Rouge Lab</p>
+          <p class="footer__tagline">Art School · Lima</p>
+          <p class="footer__domain">rougelab.co</p>
+        </div>
+        <nav class="footer__nav">
+          <a href="#nosotros">About</a>
+          <a href="#talleres">Workshops</a>
+          <a href="#galeria">Gallery</a>
+          <a href="#contacto">Contact</a>
+        </nav>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/petirojo.bc/" target="_blank" rel="noopener" aria-label="Instagram petirojo.bc">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.instagram.com/petirouge.studio/" target="_blank" rel="noopener" aria-label="Instagram petirouge.studio">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 Rouge Lab · All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../main.js"></script>
+</body>
+</html>

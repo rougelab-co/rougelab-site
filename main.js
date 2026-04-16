@@ -85,17 +85,80 @@ teamCards.forEach((card, index) => {
   teamObserver.observe(card);
 });
 
+// ---------- ABOUT FEATURE SLIDER ----------
+const aboutSlides = document.querySelectorAll('.about__feature-slide');
+const aboutDots = document.querySelectorAll('.about__feature-dot');
+
+if (aboutSlides.length > 1) {
+  let aboutSlideIndex = 0;
+
+  const setAboutSlide = (index) => {
+    aboutSlides.forEach((slide, slideIndex) => {
+      slide.classList.toggle('active', slideIndex === index);
+    });
+
+    aboutDots.forEach((dot, dotIndex) => {
+      dot.classList.toggle('active', dotIndex === index);
+    });
+  };
+
+  setAboutSlide(aboutSlideIndex);
+
+  window.setInterval(() => {
+    aboutSlideIndex = (aboutSlideIndex + 1) % aboutSlides.length;
+    setAboutSlide(aboutSlideIndex);
+  }, 5200);
+}
+
 // ---------- CONTACT FORM ----------
 const form        = document.getElementById('contactForm');
 const formSuccess = document.getElementById('formSuccess');
 const whatsappNumber = '51987142146';
+const isEnglishPage = document.documentElement.lang.startsWith('en');
 
-const interestLabels = {
-  adults: 'Talleres para adultos',
-  kids: 'Talleres para ninos',
-  companies: 'Experiencias para empresas',
-  giftcard: 'Regalar un taller / Gift card'
-};
+const interestLabels = isEnglishPage
+  ? {
+      adults: 'Adult programs',
+      kids: 'Kids program',
+      companies: 'Experiences for organizations',
+      giftcard: 'Gift card / Gift a workshop'
+    }
+  : {
+      adults: 'Talleres para adultos',
+      kids: 'Talleres para niños',
+      companies: 'Experiencias para organizaciones',
+      giftcard: 'Regalar un taller / Gift card'
+    };
+
+const formCopy = isEnglishPage
+  ? {
+      nameRequired: 'Please enter your name.',
+      emailRequired: 'Please enter a valid email address.',
+      openingWhatsApp: 'Opening WhatsApp...',
+      redirecting: 'We are taking you to WhatsApp...',
+      submitIdle: 'Send message',
+      namePrefix: 'Name',
+      emailPrefix: 'Email',
+      interestPrefix: 'Interest',
+      unspecified: 'Not specified',
+      messagePrefix: 'Message',
+      defaultMessage: 'I would like to receive more information.',
+      greeting: 'Hello Rouge Lab, I would like information about your programs and experiences.'
+    }
+  : {
+      nameRequired: 'Por favor ingresa tu nombre.',
+      emailRequired: 'Por favor ingresa un correo electrónico válido.',
+      openingWhatsApp: 'Abriendo WhatsApp...',
+      redirecting: 'Te estamos llevando a WhatsApp...',
+      submitIdle: 'Enviar mensaje',
+      namePrefix: 'Nombre',
+      emailPrefix: 'Correo',
+      interestPrefix: 'Interés',
+      unspecified: 'No especificado',
+      messagePrefix: 'Mensaje',
+      defaultMessage: 'Quiero recibir más información.',
+      greeting: 'Hola Rouge Lab, quiero información sobre sus programas y experiencias.'
+    };
 
 if (form) {
   form.addEventListener('submit', (e) => {
@@ -108,44 +171,44 @@ if (form) {
     const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (!name) {
-      alert('Por favor ingresa tu nombre.');
+      alert(formCopy.nameRequired);
       form.name.focus();
       return;
     }
 
     if (!email || !emailRe.test(email)) {
-      alert('Por favor ingresa un correo electrónico válido.');
+      alert(formCopy.emailRequired);
       form.email.focus();
       return;
     }
 
     const btn = form.querySelector('button[type="submit"]');
     btn.disabled = true;
-    btn.textContent = 'Abriendo WhatsApp...';
+    btn.textContent = formCopy.openingWhatsApp;
 
     const interestLine = interest
-      ? `Interes: ${interestLabels[interest] || interest}`
-      : 'Interes: No especificado';
+      ? `${formCopy.interestPrefix}: ${interestLabels[interest] || interest}`
+      : `${formCopy.interestPrefix}: ${formCopy.unspecified}`;
 
     const messageLine = message
-      ? `Mensaje: ${message}`
-      : 'Mensaje: Quiero recibir mas informacion.';
+      ? `${formCopy.messagePrefix}: ${message}`
+      : `${formCopy.messagePrefix}: ${formCopy.defaultMessage}`;
 
     const whatsappText = [
-      'Hola Rouge Lab, quiero informacion sobre sus talleres.',
-      `Nombre: ${name}`,
-      `Correo: ${email}`,
+      formCopy.greeting,
+      `${formCopy.namePrefix}: ${name}`,
+      `${formCopy.emailPrefix}: ${email}`,
       interestLine,
       messageLine
     ].join('\n');
 
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappText)}`;
 
-    formSuccess.textContent = 'Te estamos llevando a WhatsApp...';
+    formSuccess.textContent = formCopy.redirecting;
     window.open(whatsappUrl, '_blank', 'noopener');
     form.reset();
     btn.disabled = false;
-    btn.textContent = 'Enviar mensaje';
+    btn.textContent = formCopy.submitIdle;
     setTimeout(() => { formSuccess.textContent = ''; }, 4000);
   });
 }
