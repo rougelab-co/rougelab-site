@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rouge Lab — Art School in Lima</title>
-  <meta name="description" content="Rouge Lab is an art school in Lima with programs for children, adults, and organizations, designed to inspire, create, and connect through a carefully crafted learning experience." />
-  <link rel="alternate" hreflang="es" href="/corporativo/" />
-  <link rel="alternate" hreflang="en" href="/corporativo/en/" />
+  <title>Rouge Lab — Art School</title>
+  <meta name="description" content="Rouge Lab is an art school in Lima offering painting, drawing, and creative expression workshops for adults, children, and teams." />
+  <link rel="alternate" hreflang="es" href="/alterna/" />
+  <link rel="alternate" hreflang="en" href="/alterna/en/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="stylesheet" href="../styles.css" />
 </head>
 <body>
 
@@ -22,11 +22,12 @@
       <span></span><span></span><span></span>
     </button>
     <ul class="nav__links" id="navLinks">
-      <li><a href="#nosotros">Proposal</a></li>
-      <li><a href="#talleres">Programs</a></li>
-      <li><a href="#talleres">Experiences</a></li>
-      <li><a href="#galeria">Results</a></li>
-      <li><a href="#contacto" class="nav__cta">Let's talk</a></li>
+      <li><a href="#nosotros">About</a></li>
+      <li><a href="#talleres">Workshops</a></li>
+      <li><a href="#empresas">Companies</a></li>
+      <li><span class="nav__placeholder">Virtual classroom</span></li>
+      <li><a href="#galeria">Gallery</a></li>
+      <li><a href="#contacto" class="nav__cta">Enroll</a></li>
       <li class="nav__lang" aria-label="Language selector">
         <a href="../">ES</a>
         <a href="./" class="is-active" aria-current="page">EN</a>
@@ -43,29 +44,30 @@
     <div class="hero__content">
       <p class="hero__eyebrow">Art School · Lima</p>
       <h1 class="hero__title">
-        Art Workshops<br />
-        <em>designed to inspire</em>
+        Art lives<br />
+        <em>in those who dare</em>
       </h1>
       <p class="hero__subtitle">
-        Rouge Lab is an art school in Lima with programs for children, adults, and organizations, created to help people learn, create, and connect through a close and thoughtfully designed educational experience.
+        Painting, drawing, and illustration workshops for adults,<br class="desktop-only" />
+        children, and work teams. No previous experience needed.
       </p>
       <div class="hero__actions">
-        <a href="#talleres" class="btn btn--primary">View programs</a>
-        <a href="#nosotros" class="btn btn--ghost">Discover the proposal</a>
+        <a href="#talleres" class="btn btn--primary">View workshops</a>
+        <a href="#nosotros" class="btn btn--ghost">Discover Rouge Lab</a>
       </div>
     </div>
     <div class="hero__visual">
       <div class="hero__card hero__card--1">
         <div class="hero__card-img" style="background-color: #c9463d;"></div>
-        <span>Guided programs</span>
+        <span>Oil Painting</span>
       </div>
       <div class="hero__card hero__card--2">
         <div class="hero__card-img" style="background-color: #e8c9a0;"></div>
-        <span>Close mentorship</span>
+        <span>Watercolor</span>
       </div>
       <div class="hero__card hero__card--3">
         <div class="hero__card-img" style="background-color: #2c2118;"></div>
-        <span>Experiences for organizations</span>
+        <span>Illustration</span>
       </div>
     </div>
     <div class="hero__scroll">
@@ -74,105 +76,82 @@
     </div>
   </section>
 
-  <section class="about" id="nosotros">
+  <section class="about about--home" id="nosotros">
     <div class="container">
       <div class="about__grid">
-        <div class="about__visual about__visual--corporate">
-          <div class="about__feature-card">
-            <div class="about__feature-slider" aria-label="Rouge Lab workshops gallery">
-              <img src="../../img/talleres/2049753c-a8f8-4cf8-a134-66e9a15b67ac.JPG" alt="Participant creating at the Rouge Lab studio" class="about__feature-image about__feature-slide active" loading="lazy" />
-              <img src="../../img/talleres/710131fc-3ccc-4c96-8515-e1dfbfdd8624.JPG" alt="Group session in a Rouge Lab workshop" class="about__feature-image about__feature-slide" loading="lazy" />
-              <img src="../../img/talleres/1487d30d-8823-4ec9-9c9c-355a350ff001.JPG" alt="Participants painting at Rouge Lab" class="about__feature-image about__feature-slide" loading="lazy" />
-              <img src="../../img/talleres/da904399-f6e9-4173-9c25-c521548ea36d.JPG" alt="Artwork created at Rouge Lab" class="about__feature-image about__feature-slide" loading="lazy" />
-              <div class="about__feature-dots" aria-hidden="true">
-                <span class="about__feature-dot active"></span>
-                <span class="about__feature-dot"></span>
-                <span class="about__feature-dot"></span>
-                <span class="about__feature-dot"></span>
-              </div>
-            </div>
-            <div class="about__feature-summary">
-              <article class="about__feature-metric">
-                <span class="about__feature-number">+800</span>
-                <span class="about__feature-label">students welcomed</span>
-              </article>
-              <p class="about__feature-copy">A carefully designed studio experience, with close guidance and formats shaped for different stages of life and different contexts.</p>
-            </div>
+        <div class="about__visual">
+          <div class="about__img-wrapper">
+            <img src="../../img/talleres/2049753c-a8f8-4cf8-a134-66e9a15b67ac.JPG" alt="Participant creating at the Rouge Lab studio" class="about__img about__img--main" loading="lazy" />
+            <img src="../../img/talleres/4819801e-a44d-4fa1-bdee-fe150445d167.JPG" alt="Felting piece created at Rouge Lab" class="about__img about__img--accent" loading="lazy" />
           </div>
-          <div class="about__highlights">
-            <article class="about__highlight">
-              <span class="about__highlight-title">Small groups</span>
-              <p>Real space to observe, practice, and receive thoughtful guidance.</p>
-            </article>
-            <article class="about__highlight">
-              <span class="about__highlight-title">Flexible programs</span>
-              <p>Workshops for adults, children, and organizations with adaptable formats.</p>
-            </article>
+          <div class="about__stat-card">
+            <span class="about__stat-number">+800</span>
+            <span class="about__stat-label">students welcomed</span>
           </div>
         </div>
         <div class="about__text">
-          <p class="section-eyebrow">Institutional proposal</p>
-          <h2 class="section-title">An art school<br /><em>with a human approach</em></h2>
+          <p class="section-eyebrow">Who we are</p>
+          <h2 class="section-title">A place where<br /><em>color speaks</em></h2>
           <p class="about__body">
-            Rouge Lab is an art school in Lima that supports creative processes through a close, professional, and sensitive perspective. We design educational experiences for children, adults, and organizations seeking to learn, explore, and create in a carefully held environment.
+            Rouge Lab was born from the belief that creating with your hands can transform you. We are a studio-school in the heart of Lima where artists, curious minds, and teams discover their own visual language.
           </p>
           <p class="about__body">
-            Our proposal combines structure, technique, and freedom to explore. We believe in teaching that offers real tools, respects each person's pace, and understands art as a practice cultivated over time.
+            Our workshops combine technique, experimentation, and plenty of color. Art is not a talent you are simply born with, it is a practice that can be cultivated.
           </p>
           <ul class="about__pillars">
             <li>
               <div class="about__pillar-icon">&#9679;</div>
               <div>
-                <strong>Close methodology</strong>
-                <p>We accompany each process with personal attention and clear goals.</p>
+                <strong>Process over outcome</strong>
+                <p>We value the creative journey as much as the finished piece.</p>
               </div>
             </li>
             <li>
               <div class="about__pillar-icon">&#9679;</div>
               <div>
                 <strong>Small groups</strong>
-                <p>We work with limited spots to favor follow-up, listening, and quality.</p>
+                <p>No more than 10 people per workshop for close guidance.</p>
               </div>
             </li>
             <li>
               <div class="about__pillar-icon">&#9679;</div>
               <div>
-                <strong>Integrated experience</strong>
-                <p>Materials, guidance, and a thoughtful environment so people can focus on learning and creating.</p>
+                <strong>Materials included</strong>
+                <p>Everything you need is already waiting for you in the studio.</p>
               </div>
             </li>
           </ul>
         </div>
       </div>
 
-      <div class="about__evidence about__evidence--band">
+      <div class="about__evidence about__evidence--band about__evidence--home">
         <div class="about__evidence-head">
           <div>
-            <p class="about__evidence-kicker">Learning with impact</p>
-            <h3 class="about__evidence-title">Art is also a tool for well-being, learning, and connection.</h3>
+            <p class="about__evidence-kicker">Why art helps</p>
+            <h3 class="about__evidence-title">Artistic practice also supports well-being, confidence, and connection.</h3>
           </div>
           <p class="about__evidence-intro">
-            Artistic practice does more than build technique. Research links it with benefits in well-being, concentration, learning, and social connection, reinforcing its value as a formative experience throughout life.
+            It is not just intuition. Evidence gathered by the WHO across thousands of studies links artistic practice with well-being, emotional regulation, social connection, and lifelong learning.
           </p>
         </div>
         <div class="about__evidence-grid">
           <article class="about__evidence-card">
-            <h3>Well-being and focus</h3>
-            <p>Working with materials and hands-on processes supports sustained attention, pause, and emotional regulation.</p>
+            <h3>Regulates and focuses</h3>
+            <p>Creating with your hands helps quiet mental noise, sustain attention, and find a real pause in the middle of everyday life.</p>
           </article>
           <article class="about__evidence-card">
-            <h3>Active learning</h3>
-            <p>Exploration, trial, and practice strengthen autonomy, discernment, and trust in one's own process.</p>
+            <h3>Builds confidence</h3>
+            <p>Exploring materials, making mistakes, and trying again develops creative autonomy and a kinder relationship with error.</p>
           </article>
           <article class="about__evidence-card">
-            <h3>Connection and community</h3>
-            <p>Shared art-making encourages conversation, empathy, and belonging in children, adults, and teams.</p>
+            <h3>Connects people</h3>
+            <p>Shared art-making encourages empathy, conversation, and belonging in children, adults, and teams alike.</p>
           </article>
         </div>
       </div>
 
       <div class="team">
-        <p class="section-eyebrow" style="text-align:center; margin-top:5rem;">Leadership</p>
+        <p class="section-eyebrow" style="text-align:center; margin-top:5rem;">The team</p>
         <h2 class="section-title" style="text-align:center; margin-bottom:3rem;">The Rouge Lab<br/><em>team</em></h2>
         <div class="team__grid">
 
@@ -184,7 +163,7 @@
             <div class="team__info">
               <h3 class="team__name">Mariaté</h3>
               <p class="team__role">Director &amp; Co-founder</p>
-              <p class="team__bio">Art director and illustrator with experience in creative, editorial, and corporate projects. At Rouge Lab, she leads the educational proposal and the development of experiences where artistic learning meets sensitivity, technique, and close guidance.</p>
+              <p class="team__bio">Art director and illustrator with broad experience in creative, editorial, and corporate projects. She has collaborated with brands and teams looking to communicate through image. At Rouge Lab, she brings that experience into the classroom, creating a space where art is learned with technique and soul.</p>
               <a href="https://www.instagram.com/petirouge.studio/" target="_blank" rel="noopener" class="team__ig">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
                 @petirouge.studio
@@ -200,7 +179,7 @@
             <div class="team__info">
               <h3 class="team__name">Carlos</h3>
               <p class="team__role">Operations Director &amp; Co-founder</p>
-              <p class="team__bio">Technology professional and university professor, with experience in management, operations, and digital transformation. At Rouge Lab, he leads the structure that supports the studio experience, from enrollment processes to institutional projection and the project's growth.</p>
+              <p class="team__bio">Technology professional and university professor, with experience leading teams at major national companies. He has managed high-impact projects in digital transformation, operations, and platforms. At Rouge Lab, he builds the infrastructure that makes the experience possible, from enrollment systems to growth strategy.</p>
             </div>
           </div>
 
@@ -225,22 +204,22 @@
   <section class="workshops" id="talleres">
     <div class="container">
       <div class="section-header">
-        <p class="section-eyebrow">Programs</p>
-        <h2 class="section-title">Programs for<br /><em>different stages</em></h2>
-        <p class="section-subtitle">A school proposal designed for children, adults, and organizations.</p>
+        <p class="section-eyebrow">Workshops</p>
+        <h2 class="section-title">Who is<br /><em>Rouge Lab for?</em></h2>
+        <p class="section-subtitle">For everyone. From age 5 to... many years beyond.</p>
       </div>
 
       <div class="workshops__tabs">
         <button class="workshops__tab active" data-tab="adults">Adults</button>
-        <button class="workshops__tab" data-tab="kids">Children</button>
-        <button class="workshops__tab" data-tab="companies">Organizations</button>
+        <button class="workshops__tab" data-tab="kids">Kids</button>
+        <button class="workshops__tab" data-tab="companies">Companies</button>
       </div>
 
       <div class="workshops__panel active" id="tab-adults">
         <div class="workshops__adults-intro">
-          <h3>Learning for adults</h3>
+          <h3>A place to create again</h3>
           <p>
-            Adult programs combine technique, exploration, and close guidance to build artistic tools with methodological clarity, without losing the joy of the creative process.
+            Our adult workshops combine technique, exploration, and close guidance so you can develop your visual language at your own pace, whether you are starting from scratch or returning to an existing practice.
           </p>
         </div>
         <div class="workshops__grid">
@@ -248,7 +227,7 @@
             <div class="workshop-card__color" style="background: #c9463d;"></div>
             <div class="workshop-card__body">
               <h3>My First Felt Figure</h3>
-              <p>Explore volume, color, and textile work in a guided experience that brings together manual technique, observation, and creative process.</p>
+              <p>Discover fiber, volume, and color while creating handmade textile pieces through a deeply creative and relaxing process.</p>
               <ul class="workshop-card__meta">
                 <li>&#128197; Friday 18:30 – 20:30</li>
                 <li>&#128205; Rouge Lab Studio</li>
@@ -261,7 +240,7 @@
             <div class="workshop-card__color" style="background: #e8c9a0;"></div>
             <div class="workshop-card__body">
               <h3>My First Watercolor Painting</h3>
-              <p>Develop technical and expressive foundations to work with water, pigment, and composition with greater control.</p>
+              <p>Master water and pigment through landscapes, botanicals, and abstraction on high-quality paper.</p>
               <ul class="workshop-card__meta">
                 <li>&#128197; Wednesday 18:00 – 20:30</li>
                 <li>&#128205; Rouge Lab Studio</li>
@@ -274,7 +253,7 @@
             <div class="workshop-card__color" style="background: #7a5c4a;"></div>
             <div class="workshop-card__body">
               <h3>Learn to Draw from Scratch</h3>
-              <p>Strengthen observation, line, composition, and narrative resources to build a visual language of your own.</p>
+              <p>Line, composition, and visual storytelling. Build your own illustrative voice from the ground up.</p>
               <ul class="workshop-card__meta">
                 <li>&#128197; Thursday 18:00 – 20:00</li>
                 <li>&#128205; Rouge Lab Studio</li>
@@ -287,7 +266,7 @@
             <div class="workshop-card__color" style="background: #2c2118;"></div>
             <div class="workshop-card__body">
               <h3>Paint Your First Project</h3>
-              <p>Work on personal projects with guidance, follow-up, and feedback in a space for ongoing practice.</p>
+              <p>An open creation space with guidance. Work on your own project with feedback from our artists.</p>
               <ul class="workshop-card__meta">
                 <li>&#128197; Sunday 10:00 – 13:00</li>
                 <li>&#128205; Rouge Lab Studio</li>
@@ -302,9 +281,9 @@
       <div class="workshops__panel" id="tab-kids">
         <div class="workshops__kids-hero">
           <div class="workshops__kids-text">
-            <h3>Children's art program</h3>
+            <h3>My little big studio</h3>
             <p>
-              The children's program offers a safe and stimulating space where kids can experiment with color, materials, and different techniques, strengthening creativity, concentration, and personal expression.
+              Rouge Lab children's workshops are spaces for free exploration where kids experiment with textures, colors, and different materials. We nurture creativity, focus, and self-expression in a safe and stimulating environment.
             </p>
             <ul class="workshops__kids-list">
               <li><strong>Ages:</strong> 5 to 12</li>
@@ -315,7 +294,7 @@
             <a href="#contacto" class="btn btn--primary">Reserve a spot</a>
           </div>
           <div class="workshops__kids-visual">
-            <img src="../../img/talleres/4cf936ca-8962-4713-806b-2a89aa88172f.JPG" alt="Child showing a painting created at Rouge Lab" class="workshops__kids-image" loading="lazy" />
+            <img src="../../img/talleres/4cf936ca-8962-4713-806b-2a89aa88172f.JPG" alt="Child showing a painting made at Rouge Lab" class="workshops__kids-image" loading="lazy" />
             <div class="workshops__kids-tags">
               <span>Tempura</span>
               <span>Collage</span>
@@ -331,37 +310,37 @@
       <div class="workshops__panel" id="tab-companies">
         <div class="workshops__companies">
           <div class="workshops__companies-text">
-            <h3>Experiences for organizations</h3>
+            <h3>Creativity for teams</h3>
             <p>
-              We design artistic experiences for organizations that want to strengthen bonds, activate creativity, and offer their teams spaces of meaningful well-being.
+              We design artistic experiences for companies that want to strengthen relationships, stimulate creative thinking, and offer their teams a genuinely restorative pause.
             </p>
             <p>
-              Each proposal adapts to the context of the team and can take place in our studio or at the organization's facilities.
+              Every session is customized and can take place either in our studio or at your company.
             </p>
           </div>
           <div class="workshops__companies-cards">
             <div class="companies-card">
               <div class="companies-card__icon">&#127775;</div>
               <h4>Creative Team Building</h4>
-              <p>Collaborative painting session for groups of 10 to 50 people.</p>
+              <p>Collaborative painting sessions for groups of 10 to 50 people.</p>
             </div>
             <div class="companies-card">
               <div class="companies-card__icon">&#127775;</div>
               <h4>Well-being Workshop</h4>
-              <p>Art-based sessions to reduce stress and promote workplace well-being.</p>
+              <p>Art-based experiences to reduce stress and support workplace well-being.</p>
             </div>
             <div class="companies-card">
               <div class="companies-card__icon">&#127775;</div>
               <h4>Brand Event</h4>
-              <p>Custom artistic experiences aligned with your organization's identity or campaign.</p>
+              <p>Custom artistic experiences shaped around your company's identity or campaign.</p>
             </div>
             <div class="companies-card">
               <div class="companies-card__icon">&#127775;</div>
               <h4>Corporate Gifts</h4>
-              <p>A framed collective artwork as a keepsake or institutional gift.</p>
+              <p>A framed collective artwork to keep as a memory or institutional gift.</p>
             </div>
           </div>
-          <a href="#contacto" class="btn btn--primary">Request a proposal</a>
+          <a href="#contacto" class="btn btn--primary">Request a quote</a>
         </div>
       </div>
     </div>
@@ -371,7 +350,7 @@
     <div class="container">
       <div class="section-header">
         <p class="section-eyebrow">Gallery</p>
-        <h2 class="section-title">Processes, pieces, and<br /><em>studio outcomes</em></h2>
+        <h2 class="section-title">What comes to life<br /><em>in the studio</em></h2>
       </div>
     </div>
     <div class="gallery__grid">
@@ -425,31 +404,31 @@
     <div class="container">
       <div class="giftcard__grid">
         <div class="giftcard__content">
-          <p class="section-eyebrow">Special experiences</p>
-          <h2 class="section-title">Gift cards to<br /><em>share art and time of one's own</em></h2>
+          <p class="section-eyebrow">Gift Card</p>
+          <h2 class="section-title">Gift a workshop,<br /><em>gift a space of your own</em></h2>
           <p class="giftcard__body">
-            Rouge Lab offers gift cards as a meaningful way to give an experience. They can be used for a workshop spot or an amount applicable to the studio's programs for children, adults, or shared experiences.
+            Some gifts last a moment and others open an experience. At Rouge Lab, you can gift a workshop spot as a gift card so someone you care about can pause, explore their creativity, and take home something made with their own hands.
           </p>
           <p class="giftcard__body">
-            It is a flexible offering, easy to coordinate, and well suited to special dates, personal celebrations, or institutional gifts with a more meaningful approach.
+            It works like any other studio offering: choose the workshop or amount you want to gift and we turn it into a special invitation for children, adults, or even a shared experience.
           </p>
           <div class="giftcard__reasons">
             <article class="giftcard__reason">
               <h3>A meaningful gift</h3>
-              <p>Turns a gift into a formative, memorable experience connected to well-being.</p>
+              <p>You are not only giving an object, you are giving time, attention, and an experience worth remembering.</p>
             </article>
             <article class="giftcard__reason">
               <h3>Flexible and personal</h3>
-              <p>It can be issued for a specific workshop, a free amount, or a special occasion according to need.</p>
+              <p>It can be for a specific workshop, a free amount, or a special date such as a birthday, Mother's Day, or a team celebration.</p>
             </article>
             <article class="giftcard__reason">
               <h3>For all ages</h3>
-              <p>It applies to different profiles and stages, from curious children to adults and teams.</p>
+              <p>It is a beautiful way to invite someone to create, whether it is a curious child, an adult reconnecting with art, or someone in need of a different kind of pause.</p>
             </article>
           </div>
           <div class="giftcard__actions">
-            <a href="#contacto" class="btn btn--primary">Request a gift card</a>
-            <span class="giftcard__note">Available in digital format with direct coordination through WhatsApp.</span>
+            <a href="#contacto" class="btn btn--primary">I want to gift a workshop</a>
+            <span class="giftcard__note">Available in digital format or coordinated through WhatsApp.</span>
           </div>
         </div>
         <div class="giftcard__visual">
@@ -465,8 +444,8 @@
       <div class="contact__grid">
         <div class="contact__info">
           <p class="section-eyebrow">Contact</p>
-          <h2 class="section-title">Let's talk about<br /><em>Rouge Lab</em></h2>
-          <p class="contact__body">Write to us to learn about programs, schedules, formats, pricing, or tailored experiences. You can also contact us through WhatsApp for a more direct conversation.</p>
+          <h2 class="section-title">Let's talk about<br /><em>your next class</em></h2>
+          <p class="contact__body">Write to us and we will tell you everything about spots, schedules, and pricing. You can also follow us on Instagram to see the daily life of the studio.</p>
           <ul class="contact__links">
             <li>
               <a href="https://wa.me/51987142146" target="_blank" rel="noopener">
@@ -504,12 +483,12 @@
             <input type="email" id="email" name="email" placeholder="you@email.com" required />
           </div>
           <div class="form-group">
-            <label for="interest">I would like information about</label>
+            <label for="interest">I am interested in</label>
             <select id="interest" name="interest">
               <option value="">Choose an option</option>
-              <option value="adults">Adult program</option>
-              <option value="kids">Children's program</option>
-              <option value="companies">Experiences for organizations</option>
+              <option value="adults">Adult workshops</option>
+              <option value="kids">Kids workshops</option>
+              <option value="companies">Experiences for companies</option>
               <option value="giftcard">Gift card / Gift a workshop</option>
             </select>
           </div>
@@ -533,8 +512,8 @@
           <p class="footer__domain">rougelab.co</p>
         </div>
         <nav class="footer__nav">
-          <a href="#nosotros">Proposal</a>
-          <a href="#talleres">Programs</a>
+          <a href="#nosotros">About</a>
+          <a href="#talleres">Workshops</a>
           <a href="#galeria">Gallery</a>
           <a href="#contacto">Contact</a>
         </nav>
@@ -553,6 +532,6 @@
     </div>
   </footer>
 
-  <script src="../../main.js"></script>
+  <script src="../main.js"></script>
 </body>
 </html>

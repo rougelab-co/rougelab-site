@@ -189,6 +189,13 @@ img { display: block; max-width: 100%; }
 }
 .nav__links a:hover { color: var(--rouge); }
 
+.nav__placeholder {
+  color: var(--text-muted);
+  font-size: .9rem;
+  font-weight: 400;
+  cursor: default;
+}
+
 .nav__lang {
   display: flex;
   align-items: center;
