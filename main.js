@@ -86,10 +86,16 @@ teamCards.forEach((card, index) => {
 });
 
 // ---------- ABOUT FEATURE SLIDER ----------
-const aboutSlides = document.querySelectorAll('.about__feature-slide');
-const aboutDots = document.querySelectorAll('.about__feature-dot');
+const aboutSliders = document.querySelectorAll('.about__feature-slider');
 
-if (aboutSlides.length > 1) {
+aboutSliders.forEach((slider) => {
+  const aboutSlides = slider.querySelectorAll('.about__feature-slide');
+  const aboutDots = slider.querySelectorAll('.about__feature-dot');
+
+  if (aboutSlides.length <= 1) {
+    return;
+  }
+
   let aboutSlideIndex = 0;
 
   const setAboutSlide = (index) => {
@@ -108,7 +114,7 @@ if (aboutSlides.length > 1) {
     aboutSlideIndex = (aboutSlideIndex + 1) % aboutSlides.length;
     setAboutSlide(aboutSlideIndex);
   }, 5200);
-}
+});
 
 // ---------- CONTACT FORM ----------
 const form        = document.getElementById('contactForm');
