@@ -417,22 +417,25 @@ img { display: block; max-width: 100%; }
 .about__img {
   position: absolute;
   border-radius: var(--radius-lg);
+  display: block;
+  width: 100%;
+  object-fit: cover;
 }
 
 .about__img--main {
   width: 75%;
   height: 340px;
   top: 0; left: 0;
-  background: linear-gradient(135deg, var(--rouge) 0%, var(--rouge-dark) 100%);
   box-shadow: var(--shadow-lg);
+  object-position: center center;
 }
 
 .about__img--accent {
   width: 55%;
   height: 220px;
   bottom: 0; right: 0;
-  background: linear-gradient(135deg, var(--sand) 0%, var(--brown) 100%);
   box-shadow: var(--shadow);
+  object-position: center center;
 }
 
 .about__stat-card {
