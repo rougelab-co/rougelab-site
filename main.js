@@ -93,7 +93,8 @@ const whatsappNumber = '51987142146';
 const interestLabels = {
   adults: 'Talleres para adultos',
   kids: 'Talleres para ninos',
-  companies: 'Experiencias para empresas'
+  companies: 'Experiencias para empresas',
+  giftcard: 'Regalar un taller / Gift card'
 };
 
 if (form) {
