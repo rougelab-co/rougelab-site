@@ -168,6 +168,13 @@ img { display: block; max-width: 100%; }
   gap: .4rem;
 }
 
+.nav__logo-mark {
+  display: block;
+  height: 44px;
+  width: auto;
+  filter: brightness(0) saturate(100%) invert(28%) sepia(62%) saturate(1690%) hue-rotate(340deg) brightness(88%) contrast(89%);
+}
+
 .nav__logo-bird {
   color: var(--rouge);
   font-size: 1rem;
@@ -1631,11 +1638,14 @@ img { display: block; max-width: 100%; }
 }
 
 .footer__logo {
-  font-family: var(--font-serif);
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: var(--white);
-  margin-bottom: .25rem;
+  margin-bottom: .45rem;
+}
+
+.footer__logo-mark {
+  display: block;
+  width: min(220px, 100%);
+  height: auto;
+  filter: brightness(0) saturate(100%) invert(28%) sepia(62%) saturate(1690%) hue-rotate(340deg) brightness(88%) contrast(89%);
 }
 
 .footer__tagline {
