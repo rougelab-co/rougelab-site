@@ -237,3 +237,74 @@ const navObserver = new IntersectionObserver(
 );
 
 sections.forEach(s => navObserver.observe(s));
+
+// ---------- PROMO MODAL ----------
+// ⚡ CONFIGURACIÓN: cambiar a true para activar la oferta, false para desactivar
+const PROMO_ACTIVE = true;
+
+(function initPromo() {
+  if (!PROMO_ACTIVE) return;
+  const overlay = document.getElementById('promoOverlay');
+  if (!overlay) return;
+
+  // Mostrar tras 1.5s si no fue cerrado antes en esta sesión
+  if (!sessionStorage.getItem('promo-dismissed')) {
+    setTimeout(() => overlay.classList.add('active'), 1500);
+  }
+
+  const close = () => {
+    overlay.classList.remove('active');
+    sessionStorage.setItem('promo-dismissed', '1');
+  };
+
+  overlay.querySelector('.promo__close').addEventListener('click', close);
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) close(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+
+  // Currency toggle
+  const togBtn = overlay.querySelector('.promo__currency-toggle');
+  if (togBtn) {
+    const oldEl = overlay.querySelector('.promo__price-old');
+    const newEl = overlay.querySelector('.promo__price-new');
+    const prices = { PEN: ['S/ 149', 'S/ 69'], USD: ['US$ 40', 'US$ 19'] };
+    let curr = 'PEN';
+    const togLabel = isEnglishPage ? ['View in US$', 'View in S/'] : ['Ver en US$', 'Ver en S/'];
+    togBtn.addEventListener('click', () => {
+      curr = curr === 'PEN' ? 'USD' : 'PEN';
+      oldEl.textContent = prices[curr][0];
+      newEl.textContent = prices[curr][1];
+      togBtn.textContent = curr === 'PEN' ? togLabel[0] : togLabel[1];
+    });
+  }
+
+  // Countdown — expires April 22, 2026 11:59 PM Lima (UTC-5)
+  const deadline = new Date('2026-04-22T23:59:59-05:00').getTime();
+  const cdBox = document.getElementById('promoCountdown');
+  if (cdBox) {
+    const dEl = cdBox.querySelector('[data-cd="d"]');
+    const hEl = cdBox.querySelector('[data-cd="h"]');
+    const mEl = cdBox.querySelector('[data-cd="m"]');
+    const sEl = cdBox.querySelector('[data-cd="s"]');
+    const pad = (n) => String(n).padStart(2, '0');
+
+    const tick = () => {
+      const diff = deadline - Date.now();
+      if (diff <= 0) {
+        dEl.textContent = '00'; hEl.textContent = '00';
+        mEl.textContent = '00'; sEl.textContent = '00';
+        return;
+      }
+      const d = Math.floor(diff / 86400000);
+      const h = Math.floor((diff % 86400000) / 3600000);
+      const m = Math.floor((diff % 3600000) / 60000);
+      const s = Math.floor((diff % 60000) / 1000);
+      dEl.textContent = pad(d);
+      hEl.textContent = pad(h);
+      mEl.textContent = pad(m);
+      sEl.textContent = pad(s);
+    };
+
+    tick();
+    setInterval(tick, 1000);
+  }
+})();

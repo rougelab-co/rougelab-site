@@ -554,6 +554,40 @@
     </div>
   </footer>
 
+  <!-- PROMO MODAL -->
+  <div class="promo-overlay" id="promoOverlay">
+    <div class="promo">
+      <div class="promo__accent"></div>
+      <button class="promo__close" aria-label="Close">&times;</button>
+      <span class="promo__badge">New workshop</span>
+      <h2 class="promo__title">Your first portrait<br /><em>from scratch</em></h2>
+      <p class="promo__subtitle">Online workshop for beginners. Learn to draw faces step by step with professional techniques and easy-to-find materials.</p>
+      <div class="promo__details">
+        <span class="promo__detail"><span class="promo__detail-icon">🎨</span> Live online</span>
+        <span class="promo__detail"><span class="promo__detail-icon">⏱️</span> 1.5 hours</span>
+        <span class="promo__detail"><span class="promo__detail-icon">📅</span> Thu 30 · 7:00 pm (Lima time)</span>
+      </div>
+      <div class="promo__pricing">
+        <span class="promo__price-old">S/ 149</span>
+        <span class="promo__price-new">S/ 69</span>
+        <span class="promo__discount-tag">-54%</span>
+        <button class="promo__currency-toggle">View in US$</button>
+      </div>
+      <p class="promo__urgency">Limited-time offer</p>
+      <div class="promo__countdown" id="promoCountdown">
+        <div class="promo__countdown-unit"><span class="promo__countdown-number" data-cd="d">00</span><span class="promo__countdown-label">days</span></div>
+        <span class="promo__countdown-sep">:</span>
+        <div class="promo__countdown-unit"><span class="promo__countdown-number" data-cd="h">00</span><span class="promo__countdown-label">hrs</span></div>
+        <span class="promo__countdown-sep">:</span>
+        <div class="promo__countdown-unit"><span class="promo__countdown-number" data-cd="m">00</span><span class="promo__countdown-label">min</span></div>
+        <span class="promo__countdown-sep">:</span>
+        <div class="promo__countdown-unit"><span class="promo__countdown-number" data-cd="s">00</span><span class="promo__countdown-label">sec</span></div>
+      </div>
+      <a href="#contacto" class="promo__cta" onclick="document.getElementById('promoOverlay').classList.remove('active');sessionStorage.setItem('promo-dismissed','1');">Sign me up</a>
+      <p class="promo__footer">Join the Rouge community · Limited spots</p>
+    </div>
+  </div>
+
   <script src="../main.js"></script>
 </body>
 </html>

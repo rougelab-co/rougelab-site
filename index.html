@@ -567,6 +567,40 @@
     </div>
   </footer>
 
+  <!-- PROMO MODAL -->
+  <div class="promo-overlay" id="promoOverlay">
+    <div class="promo">
+      <div class="promo__accent"></div>
+      <button class="promo__close" aria-label="Cerrar">&times;</button>
+      <span class="promo__badge">Nuevo taller</span>
+      <h2 class="promo__title">Tu primer retrato<br /><em>desde cero</em></h2>
+      <p class="promo__subtitle">Taller online para principiantes. Aprende a dibujar rostros paso a paso con técnicas profesionales y materiales fáciles de conseguir.</p>
+      <div class="promo__details">
+        <span class="promo__detail"><span class="promo__detail-icon">🎨</span> Online en vivo</span>
+        <span class="promo__detail"><span class="promo__detail-icon">⏱️</span> 1.5 horas</span>
+        <span class="promo__detail"><span class="promo__detail-icon">📅</span> Jue 30 · 7:00 pm (hora Lima)</span>
+      </div>
+      <div class="promo__pricing">
+        <span class="promo__price-old">S/ 149</span>
+        <span class="promo__price-new">S/ 69</span>
+        <span class="promo__discount-tag">-54%</span>
+        <button class="promo__currency-toggle">Ver en US$</button>
+      </div>
+      <p class="promo__urgency">Oferta por tiempo limitado</p>
+      <div class="promo__countdown" id="promoCountdown">
+        <div class="promo__countdown-unit"><span class="promo__countdown-number" data-cd="d">00</span><span class="promo__countdown-label">días</span></div>
+        <span class="promo__countdown-sep">:</span>
+        <div class="promo__countdown-unit"><span class="promo__countdown-number" data-cd="h">00</span><span class="promo__countdown-label">hrs</span></div>
+        <span class="promo__countdown-sep">:</span>
+        <div class="promo__countdown-unit"><span class="promo__countdown-number" data-cd="m">00</span><span class="promo__countdown-label">min</span></div>
+        <span class="promo__countdown-sep">:</span>
+        <div class="promo__countdown-unit"><span class="promo__countdown-number" data-cd="s">00</span><span class="promo__countdown-label">seg</span></div>
+      </div>
+      <a href="#contacto" class="promo__cta" onclick="document.getElementById('promoOverlay').classList.remove('active');sessionStorage.setItem('promo-dismissed','1');">Quiero inscribirme</a>
+      <p class="promo__footer">Súmate a la comunidad Rouge · Cupos limitados</p>
+    </div>
+  </div>
+
   <script src="main.js"></script>
 </body>
 </html>
