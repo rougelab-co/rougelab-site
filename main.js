@@ -258,6 +258,7 @@ const PROMO_ACTIVE = true;
   };
 
   overlay.querySelector('.promo__close').addEventListener('click', close);
+  overlay.querySelector('.promo__dismiss').addEventListener('click', close);
   overlay.addEventListener('click', (e) => { if (e.target === overlay) close(); });
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
 

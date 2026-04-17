@@ -1832,6 +1832,24 @@ img { display: block; max-width: 100%; }
   transform: scale(1.04);
 }
 
+.promo__dismiss {
+  display: block;
+  margin: .75rem auto 0;
+  background: none;
+  border: none;
+  color: var(--cream-mid);
+  font-family: var(--font-sans);
+  font-size: .78rem;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color .2s;
+}
+
+.promo__dismiss:hover {
+  color: var(--cream);
+}
+
 .promo__footer {
   font-family: var(--font-sans);
   font-size: .78rem;
