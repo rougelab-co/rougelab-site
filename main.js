@@ -247,14 +247,11 @@ const PROMO_ACTIVE = true;
   const overlay = document.getElementById('promoOverlay');
   if (!overlay) return;
 
-  // Mostrar tras 1.5s si no fue cerrado antes en esta sesión
-  if (!sessionStorage.getItem('promo-dismissed')) {
-    setTimeout(() => overlay.classList.add('active'), 1500);
-  }
+  // Mostrar tras 1.5s en cada recarga
+  setTimeout(() => overlay.classList.add('active'), 1500);
 
   const close = () => {
     overlay.classList.remove('active');
-    sessionStorage.setItem('promo-dismissed', '1');
   };
 
   overlay.querySelector('.promo__close').addEventListener('click', close);
@@ -267,7 +264,7 @@ const PROMO_ACTIVE = true;
   if (togBtn) {
     const oldEl = overlay.querySelector('.promo__price-old');
     const newEl = overlay.querySelector('.promo__price-new');
-    const prices = { PEN: ['S/ 149', 'S/ 69'], USD: ['US$ 40', 'US$ 19'] };
+    const prices = { PEN: ['S/ 149', 'S/ 30'], USD: ['US$ 40', 'US$ 8'] };
     let curr = 'PEN';
     const togLabel = isEnglishPage ? ['View in US$', 'View in S/'] : ['Ver en US$', 'Ver en S/'];
     togBtn.addEventListener('click', () => {
